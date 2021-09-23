@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+     <style>
+         body{
+             background-color: turquoise;
+         }
+         @media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+img { max-width: 100%; height: auto; }
+@media (min-device-width:600px) {
+    img[data-src-600px] { padding-left: 50px;
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+html { font-size:100%; }
+@media (min-width: 640px) { body {font-size:1rem;}}
+ 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } 
+     </style>
+</head>
+<body>
+
+    <h1  class="w3-center"  style="color: blue;"><b>New Zealand </b></h1>
+    <p class="w3-card w3-center" style="color: blue;">This is the second set of images</p>
+    <br><br>
+     
+    <div class="w3-card" style="bottom: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;">
+        <div class="circle" style=" margin: 10% auto 50px auto ;" >
+            <img src="part2.jpg" alt="" style="border-radius: 50%;padding: 16px 14px;height: 300px;width: 300px;">
+        </div>
+        <div class="rectangle" style="height: 200px;
+        border-radius: 0%;
+        bottom: -336px;
+        margin: 10% auto 50px auto;
+        ">
+            <img src="part2.jpg" alt="" style="padding: 16px 14px;">
+        </div>
+    </div>
+    <div class="w3-card" style="bottom: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;">
+        <div class="square" style="height: 300px; width: 300px; 
+        border-radius: 0%;
+        
+        float: left;
+        align-items: center;
+        margin: 6% auto 50px auto; ">
+            <img src="part3.jpg" alt="" >
+        </div>
+        <div class="triangle" style="border-radius: 0%;
+        width: 300px;
+        height: 300px;
+        margin: 6% auto 50px auto;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);">
+            <img src="part3.jpg" alt=""  >
+        </div>
+    </div>
+    <button class="w3-button w3-black w3-section" style="color: white;" onclick=nextimage()> previous image</button>
+    <script>
+        const nextimage=()=>{
+          window.location.href='index.html'
+        }
+    </script>
+    </body>
+    </html>
